@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Página de novidades e boas vindas aos clientes do Grupo TDI">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <title>Grupo TDI</title>
+</head>
+<body>
+    <main>
+        <section class="section1">
+            <div class="wrapper wrapper__top">
+                <div class="wrapper__gray"></div>
+                <div class="wrapper__orange"></div>
+                <div class="wrapper__blue">
+                    <div class="wrapper__logo">
+                        <img src="/images/TDI_logo.webp" alt="Company Logo" class="logo no-collision">
+                    </div>
+                </div>
+            </div>
+            <div class="welcome">
+                <div class="decoration dec1"></div>
+                <div class="decoration dec2"></div>
+                <div class="decoration dec3"></div>
+                <img src="/images/businessman.webp" alt="Homem de Negócios" class="welcome__businessman">
+                <div class="welcome__text">
+                    <p id="text">Olá, como vai?</p>
+                    <p>Temos uma super novidade aguardando por você!</p>
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="section2__rectangle"></div>
+            <div class="about">
+                <div class="about__text">
+                    <p>O objetivo do Grupo TDI é facilitar a busca do advogado por Processos Judiciais e Administrativos, sejam eles ativos ou inativos/encerrados arquivados.</p>
+                </div>
+                <img src="/images/lawyer.webp" alt="Advogado" class="about__lawyer">
+            </div>
+        </section>
+        <section class="section3">
+            <div class="utilities">
+                <div class="utilities__about">
+                    <img src="/images/empresario.webp" alt="Advogado" class="utilities__lawyer">
+                    <div class="utilities__text">
+                        <p>A consulta de Processos Judiciais e Administrativos retorna informações, tanto atuais quanto históricas do envolvimento da entidade consultada em ações judiciais de todos os tipos, seja ela civil, trabalhista, criminal, etc. A TDI também disponibiliza informações relacionadas com processos de perfil administrativo, geralmente movidos por/em órgãos regulatórios ou entidades de classe específicas.</p>
+                    </div>
+                </div>
+                <ul class="contacts">
+                    <li><a href="#" target="_blank" rel="external"><img src="/images/logos/Instagram.svg" alt="Instagram" class="contacts__logo"></a></li>
+                    <li><a href="#" target="_blank" rel="external"><img src="/images/logos/WhatsApp.svg" alt="WhatsApp" class="contacts__logo"></a></li>
+                    <li><a href="#" target="_blank" rel="external"><img src="/images/logos/Facebook.png" alt="Facebook" class="contacts__logo"></a></li>
+                    <li><a href="#" target="_blank" rel="external"><img src="/images/logos/mail.jpg" alt="Email" class="contacts__logo"></a></li>
+                    <li><a href="#" target="_blank" rel="external"><img src="/images/logos/website.png" alt="Website" class="contacts__logo"></a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="section4">
+            <div class="section4__decoration">
+                <div class="wrapper wrapper__bottom">
+                    <div class="wrapper__gray"></div>
+                    <div class="wrapper__orange"></div>
+                    <div class="wrapper__blue"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.onload = welcome("João") // Passe aqui a variável com o nome do cliente
+
+        function welcome(name) {
+            if (![null, "", undefined, Infinity].includes(name)) {
+                let text = document.querySelector("#text")
+                text.innerText = `Olá ${name}!`
+            }
+        }
+    </script>
+</body>
+</html>
